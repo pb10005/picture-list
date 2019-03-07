@@ -20,6 +20,7 @@
             <a class="link headline" target="_blank" :href="item.url"
               ><b>{{ item.name }}</b></a
             >
+            <v-icon v-if="item.done" color="success">done</v-icon>
             <div class="tag-area">
               <v-chip
                 class="tag"
@@ -30,7 +31,6 @@
               >
             </div>
             <p>{{ item.description }}</p>
-            <p v-if="item.done">済</p>
           </div>
         </v-card>
       </div>
