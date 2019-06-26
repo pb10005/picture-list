@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>表示数: {{ currentData.length }}軒</p>
     <div>
+      <p>表示数: {{ currentData.length }}軒</p>
       <span v-if="currentFilter"><b>フィルター:</b>{{ currentFilter }}</span>
       <v-btn @click="clear" outline color="primary">クリア</v-btn>
       <v-btn @click="shuffle" outline color="primary">シャッフル</v-btn>
@@ -11,11 +11,6 @@
         <v-card tile>
           <v-img :src="item.picUrl" aspect-ratio="1.75" class="grey lighten-2">
           </v-img>
-          <!--
-            <div class="pic-box">
-              <img :src="item.picUrl" width="auto" height="100%" /><br />
-            </div>
-          -->
           <div class="content-box">
             <a class="link headline" target="_blank" :href="item.url"
               ><b>{{ item.name }}</b></a

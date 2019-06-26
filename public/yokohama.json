@@ -1,0 +1,31 @@
+{
+    "title": "横浜の店",
+    "description": "横浜市内の飲食店の一覧",
+    "footer": "出典: ",
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "ラーメン二郎 関内店",
+        "description": "",
+        "url": "",
+        "picUrl": "",
+        "done": true,
+        "tags": [
+          "ラーメン",
+          "二郎系"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "家系総本山　吉村家",
+        "description": "",
+        "url": "",
+        "picUrl": "",
+        "done": true,
+        "tags": [
+          "ラーメン",
+          "家系"
+        ]
+      }
+    ]
+  }

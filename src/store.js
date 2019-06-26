@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import miselist from "./assets/miselist.json";
+
+import axios from "axios";
 
 Vue.use(Vuex);
 
@@ -41,8 +42,11 @@ const store = {
     }
   },
   actions: {
-    fetchData(context) {
-      context.commit("setData", miselist);
+    fetchData(context, payload) {
+      axios.get(payload.fileName)
+        .then(response => {
+          context.commit("setData", response.data);
+        })
     }
   }
 };
