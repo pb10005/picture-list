@@ -9,7 +9,7 @@
     <transition-group class="flex" name="pics">
       <div class="box" v-for="item in currentData" :key="item.id">
         <v-card tile>
-          <v-img :src="item.picUrl" aspect-ratio="1.75" class="grey lighten-2">
+          <v-img :src="item.picUrl" aspect-ratio="1.75" class="grey lighten-2" lazy-src>
           </v-img>
           <div class="content-box">
             <a class="link headline" target="_blank" :href="item.url"
